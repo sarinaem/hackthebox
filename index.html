@@ -28,18 +28,20 @@
         
         </div>
         <div class="header-right">
-            <span>sign In*</span>
+            <span>sign In</span>
             <button class="start">Get Started</button>
         </div>
         
 
     </header>
+    <section>
     <div class="show-message" id="showMessage">
         <span class="newpoint">
             <span class="new">New</span>
         </span>
         Join the biggest cybersecurity event for Universities! More than $65,000 in prizes
-        <i class="fa-solid fa-chevron-right" id="my-icon"></i>       
+        <i class="fa-solid fa-chevron-right" id="my-icon"></i>
+        <!-- <i class="fa-solid fa-arrow-right" class="arrow"></i>        -->
     </div>
     <div class="content-main">
         <h1 class="title-page">The #1 cybersecurity
@@ -57,8 +59,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <div class="box box1 margin-box">
-                    <img src="assets/img/Capture.PNG" class="img-box" alt="first-image" />
+                <div class="box box1">
+                    <lottie-player class="img-box" src="assets/hack.json" background="transparent" speed="1"
+                    style="width: 387px; height: 600px" direction="1" mode="normal" loop autoplay>
+                </lottie-player>
+                    <!-- <img src="assets/img/Capture.PNG" class="img-box" alt="first-image" /> -->
                     <h2 class="font-size36-md h2-title">For Business</h2>
                     <p class="p-title">
                         One solution for developing cybersecurity
@@ -71,8 +76,11 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="box box1 margin1-box pt-2">
-                    <img src="assets/img/Capture-1.PNG" class="img-box" alt="first-image" />
+                <div class="box box1 pt-2">
+                    <!-- <img src="assets/img/Capture-1.PNG" class="img-box" alt="first-image" /> -->
+                    <lottie-player class="img-box" src="assets/hacker.json" background="transparent" speed="1"
+                    style="width: 387px; height: 600px" direction="1" mode="normal" loop autoplay>
+                </lottie-player>
                     <h2 class="font-size36-md h2-title">For Hackers</h2>
                     <p class="p-title">
                          A unified suite of hacking experiences - from 
@@ -85,9 +93,12 @@
             </div>
             <div class="col-md-12">
                 <div class="box box2">
-                    <img class="img-box2" src="assets/img/Capture۲.PNG" alt="">
+                    <!-- <img class="img-box2" src="assets/img/Capture۲.PNG" alt=""> -->
+                    <lottie-player class="img-box2" src="assets/third.json" background="transparent" speed="1"
+                    style="width: 400px; height: 650px" direction="1" mode="normal" loop autoplay>
+                </lottie-player>
                     <span>
-                        <h2 class="font-size36-md h2-box2">For Hackers</h2>
+                        <h2 class="font-size36-md h2-box2">For Universities</h2>
                         <p class="p-box2">
                             A unified suite of hacking experiences - from 
                         <br>
@@ -137,7 +148,7 @@
         <img src="assets/img/logo-site.png" alt="لوگو سایت">
       </div> -->
       <div class="row">
-        <div class="col-lg-10 col-xl-8">
+        <div class="col-lg-10 col-xl-8 question-box">
             <h2 class="question-content" >Why Hack The Box?</h2>
             <p class="text-question">Upskilling cyber superhumans since 2017.</p>
         </div>
@@ -145,16 +156,62 @@
     </div>
     <div class="container card-container">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="col-12 nav12">
+                    <div class="nav-card">
+                        <div class="image-card">
+                            <img src="assets/img/why-1.svg" alt="" />
+                        </div>
+                        <h2>Top-quality content</h2>
+                        <p style="font-size:15px">Created by hackers for hackers</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-4">
+                <div class="col-12">
+                    <div class="nav-card">
+                        <div class="image-card">
+                            <img src="assets/img/why-2.svg" alt="" />
+                        </div>
+                        <h2>Engaging & gamified</h2>
+                        <p style="font-size:15px">Learn by doing, learn by playing</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-4">
+                <div class="col-12">
+                    <div class="nav-card">
+                        <div class="image-card">
+                            <img src="assets/img/why-3.svg" alt="" />
+                        </div>
+                        <h2>Hacking community</h2>
+                        <p style="font-size:15px">Anyone can learn, from zero to hero</p>
+                    </div>
+                </div>
+               
+            </div>
         </div>
        
     </div>
-    
+    <div class="container">
+        <div class="row main-box">
+            <div class="statistics-box">
+                <h3 class="statistics">
+                    <span class="typewriter-number">2.3m</span>
+                    <span class="typewriter" id="typeWriter">
+                        <span class="Typewriter__cursor"></span>
+                        <span class="Typewriter__cursor">|</span>
+                    </span>
 
-
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
 
     <script src="assets/main.js"></script>
+    <script src="assets/lottie-player.js"></script>
 </body>
 </html>

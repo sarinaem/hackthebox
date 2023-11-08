@@ -80,6 +80,8 @@ body {
     /* line-height: 1.5; */
     color: #FFFFFF;
     background-color: #111927;
+    overflow-x: hidden;
+
 }
 
 
@@ -96,6 +98,7 @@ header {
     position:fixed;
     top: 0;
     width: 100%;
+    box-shadow:#131a24 ;
 
 }
 
@@ -242,10 +245,12 @@ span.newpoint {
 
 .container {
    margin-top: 0;
-   overflow-y: hidden
 }
 
-
+.col-12 {
+    width: 100%;
+    flex: 0 0 100%;
+}
 .col-6{
     width:50%;
     
@@ -313,25 +318,29 @@ span.newpoint {
 .h2-title {
     color: #fff;
     font-size: 32px;
-    line-height: 42px;
-    font-weight: 800px; 
-    position: relative;
+    /* line-height: 42px; */
+    font-weight: 700px; 
+    /* position: relative;
     top: 70px;
-    left: 2px;
-    display: flex;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-    }
+    left: 2px; */
+    position: absolute;
+    top: 200%;
+    
 
+
+}
+
+    .h2-title:hover {
+        color: #9FEF00;
+    }
 
 .p-title {
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-    top: 209%;
+    position: relative;
+    top: 37%;
+    right: 9px;
     color: #a4b1cd;
-
 }
 
 .p-box2 {
@@ -345,10 +354,8 @@ span.newpoint {
 
 
 .img-box {
-    width: 387px;
-    height: 222px;
     position: absolute;
-    top: 824px;
+    top: 670px;
 }
 
 .box1 {
@@ -358,7 +365,9 @@ span.newpoint {
     height: 419px;
     text-align: center;
     transition: top 0.3s;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box2 {
     background-color: #1a2332!important;
@@ -370,6 +379,10 @@ span.newpoint {
 
 }
 
+.h2-box2:hover {
+    color: #9FEF00;
+}
+
 .col-md-12 {
     display: flex;
     justify-content: center;
@@ -378,9 +391,11 @@ span.newpoint {
 
 .img-box2 {
     position: relative;
-    right: 70px;
-    bottom: 3px;
+    right: 83px;
+    bottom: 14px;
 }
+
+
 
 .box {
     display: flex;
@@ -404,6 +419,11 @@ span.newpoint {
 
 .margin-box {
     margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+
+
 }
 .margin1-box {
     margin-right: 120px;
@@ -494,18 +514,106 @@ span.newpoint {
     justify-content: center;
     align-items: center;
     margin-top: 35px;
+    font-weight:600;
+  }
 
+  .question-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: inherit
   }
 
 
   .text-question {
     display: flex;
     justify-content: center;
+    color: #a4b1cd;
   }
 
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    padding-right: auto 0;
+    margin-top: 0px;
+ }
+.nav-card p {
+    text-align: center;
+    line-height: 28px;
+    /* letter-spacing: 2px; */
+    color: #a4b1cd;
+}
+
+.nav-card h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px !important;
+    color: #fff;
+}
+
+.image-card {
+    padding-top: 1.5rem !important;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+
+}
+.image-card img {
+    width: 195px;
+}
+
+.nav-card {
+    background-color: #1a2332!important;
+    width: 300px;
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #202837;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+
+.nav12 {
+    padding-right: 20px;
+}
+
+/* .main-box {
+        background-image: url(/images/landingv3/home/oulines-bg.svg);
+        background-position:50%;
+        background-repeat: no-repeat;
+        height: 100%;
+    } */
 
 
+.statistics-box {
+    border: 1px solid #202837;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 29px;
+    max-width: 1100px;
 
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.typewriter-number{
+    color: #9FEF00;
+}
+ .typewriter {
+    color: #9FEF00;
+ }
 
 @media (min-width: 768px) {
     .font-size36-md {
