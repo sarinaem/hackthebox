@@ -181,7 +181,6 @@ a:hover {
 .show-message {
     color: #a4b1cd;
     display: inline-flex!important;
-    margin-top: 183px;
     border-radius: 16px;
     font-size: 13px;
     background: #1A2332;
@@ -243,7 +242,7 @@ span.newpoint {
 
 .container {
    margin-top: 0;
-
+   overflow-y: hidden
 }
 
 
@@ -330,7 +329,7 @@ span.newpoint {
     font-size: 16px;
     font-weight: 400;
     position: absolute;
-    top: 205%;
+    top: 209%;
     color: #a4b1cd;
 
 }
@@ -349,7 +348,7 @@ span.newpoint {
     width: 387px;
     height: 222px;
     position: absolute;
-    top: 150%;
+    top: 824px;
 }
 
 .box1 {
@@ -452,32 +451,11 @@ span.newpoint {
 }
 
   
-  
-/* .logo-container {
-    animation: logoAnimation 3s infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 640px;
-    height: 640px;
-  }
-  
-  @keyframes logoAnimation {
-    0% {
-      transform: scale(1) rotate(0deg);
-    }
-    50% {
-      transform: scale(1.2) rotate(180deg);
-    }
-    100% {
-      transform: scale(1) rotate(360deg);
-    }
-  } */
   .logo-container {
     position: fixed;
-    top: 79%;
+    padding-top: 2px;
+    top: 20px;   
     left: 50%;
-    margin-top: 20px;
     transform: translateX(-50%);
     animation: logoAnimation 3s infinite;
   }
@@ -504,6 +482,10 @@ span.newpoint {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 12px;
+    margin-left: 20%;
+    flex-wrap: wrap;
+
   }
   .question-content {
     font-size: 2rem;
@@ -511,6 +493,14 @@ span.newpoint {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 35px;
+
+  }
+
+
+  .text-question {
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -525,3 +515,10 @@ span.newpoint {
         font-size:18px;
     }
 }
+
+@media (min-width: 768px) {
+    /* برای صفحات بزرگتر از 768 پیکسل */
+    .logo-container img {
+      width: 200px; /* اندازه بزرگ لوگو */
+    }
+  }

@@ -1,3 +1,20 @@
+
+const header = document.querySelector('.header');
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener('scroll', function() {
+  const currentScrollPos = window.pageYOffset;
+
+  if (currentScrollPos > prevScrollPos) {
+    header.classList.add('hide-header'); // اضافه کردن کلاس مخفی کردن هدر
+  } else {
+    header.classList.remove('hide-header'); // حذف کلاس مخفی کردن هدر
+  }
+
+  prevScrollPos = currentScrollPos;
+});
+
+
 const icon = document.getElementById ('my-icon');
 icon.addEventListener ('mouseover', function(){
     icon.classList.remove ('fa-chevron-right');
@@ -5,15 +22,9 @@ icon.addEventListener ('mouseover', function(){
 });
 
 
-window.addEventListener('scroll', function() {
-    let element = document.getElementById('myElement');
-    
-    // اگر اسکرول به بالای صفحه بیشتر از 200 پیکسل رسید
-    if (window.pageYOffset > window.innerHeight) {
-        header.style.display = 'none';
-    } else { // در غیر این صورت
-        header.style.display = 'block';
-    }
-  });
+
+
+
+
 
   
