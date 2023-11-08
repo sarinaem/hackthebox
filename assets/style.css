@@ -134,6 +134,7 @@ a:hover {
     background-color: #9FEF00;
     width: 124px;
     height: 45px;
+    border-style: none;
     border-radius: 4px;
     font-weight: 600;
     padding: 0;
@@ -164,6 +165,7 @@ a:hover {
 .header-center {
     margin-left: 43px;
 }
+
 
 
 .show-message {
@@ -325,12 +327,10 @@ span.newpoint {
     left: 2px; */
     position: absolute;
     top: 200%;
-    
-
 
 }
 
-    .h2-title:hover {
+.h2-title:hover {
         color: #9FEF00;
     }
 
@@ -343,14 +343,7 @@ span.newpoint {
     color: #a4b1cd;
 }
 
-.p-box2 {
-    position: relative;
-    bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #a4b1cd;
 
-}
 
 
 .img-box {
@@ -369,6 +362,12 @@ span.newpoint {
     justify-content: center;
     align-items: center;
 }
+
+.Business {
+    margin-left: 120px;
+    
+}
+
 .box2 {
     background-color: #1a2332!important;
     background-position: 0;
@@ -381,6 +380,14 @@ span.newpoint {
 
 .h2-box2:hover {
     color: #9FEF00;
+}
+.p-box2 {
+    position: relative;
+    bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a4b1cd;
+
 }
 
 .col-md-12 {
@@ -440,6 +447,9 @@ span.newpoint {
 .demo-box2:hover {
     color:#9FEF00;
 }
+
+
+
 
 .img-company {
     max-width: 100%;
@@ -521,8 +531,13 @@ span.newpoint {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-shrink: inherit
+    flex-shrink: inherit;
   }
+
+  /* .question-company-box {
+    background-color: #0B121F;
+
+  } */
 
 
   .text-question {
@@ -533,12 +548,14 @@ span.newpoint {
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 0;
-    padding-right: auto 0;
+    /* margin-right: 0; */
+    /* padding-right: auto 0; */
     margin-top: 0px;
+  
  }
 .nav-card p {
     text-align: center;
@@ -582,37 +599,93 @@ span.newpoint {
 }
 
 /* .main-box {
-        background-image: url(/images/landingv3/home/oulines-bg.svg);
-        background-position:50%;
-        background-repeat: no-repeat;
-        height: 100%;
+    background-image: url("https://www.hackthebox.com/images/landingv3/home/oulines-bg.svg");
+    background-repeat: no-repeat;
     } */
 
 
+
+
+    
 .statistics-box {
     border: 1px solid #202837;
     padding: 2rem;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     border-radius: 6px;
+    /* position: relative; */
     margin-top: 29px;
     max-width: 1100px;
-
+    min-width: 400px;
+    /* background-position: 50%; */
 }
+
 
 .statistics {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    font-weight: 700;
+    font-size: 48px;
 }
 
 .typewriter-number{
     color: #9FEF00;
+    letter-spacing: 7px;
+
 }
  .typewriter {
     color: #9FEF00;
+    width: fit-content;
+ }
+
+ .Typewriter__cursor {
+    color: #9FEF00 !important;
+ }
+
+
+ .statistics-box p {
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content:center ;
+ }
+
+ .color-text {
+    color: #9FEF00;
+    text-decoration: underline;
+
+ }
+
+
+ .container-chevron {
+    background-color: #111927;
+    margin-top: 55px;
+
+
+ }
+
+ .h2.chevron {
+    font-size: 42px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 54px;
+    margin-top: 0;
+ }
+
+ .chevron-button {
+    border-radius: 6px;
+    height: 48px;
+    margin: 0 4px;
+    border-style: none;
+    width: 48px;  
+
+ }
+ .both-button {
+    margin-top: 5px;
  }
 
 @media (min-width: 768px) {
@@ -622,11 +695,12 @@ span.newpoint {
     .font-size18-md {
         font-size:18px;
     }
+
+   
 }
 
 @media (min-width: 768px) {
-    /* برای صفحات بزرگتر از 768 پیکسل */
     .logo-container img {
-      width: 200px; /* اندازه بزرگ لوگو */
+      width: 200px; 
     }
   }
