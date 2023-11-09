@@ -99,6 +99,7 @@ header {
     transition: top 0.3s;
     top: 0;
     width: 100%;
+    z-index: 999999;
     box-shadow:#131a24 ;
     background-color: #111927;
 
@@ -345,8 +346,6 @@ span.newpoint {
     right: 9px;
     color: #a4b1cd;
 }
-
-
 
 
 .img-box {
@@ -777,6 +776,7 @@ span.newpoint {
     text-align: center;
     line-height: 54px;
     display: flex;
+    margin-bottom: -80px;
     flex-direction: column;
 
 }
@@ -943,6 +943,6 @@ span.newpoint {
 
 
   @media screen and (min-width: 2000px) {
-
+    
 
   }
