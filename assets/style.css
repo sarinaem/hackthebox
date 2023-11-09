@@ -96,6 +96,7 @@ header {
     font-size: 16px !important;
     width: 100% !important;
     position:fixed;
+    transition: top 0.3s;
     top: 0;
     width: 100%;
     box-shadow:#131a24 ;
@@ -114,6 +115,7 @@ ul.navbar {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    
 }
 
 .nav-link  {
@@ -165,6 +167,7 @@ a:hover {
 
 .header-center {
     margin-left: 43px;
+    margin-top: 6px;
 }
 
 
@@ -327,8 +330,7 @@ span.newpoint {
     top: 70px;
     left: 2px; */
     position: absolute;
-    top: 200%;
-
+    top: 208%;
 }
 
 .h2-title:hover {
@@ -349,7 +351,8 @@ span.newpoint {
 
 .img-box {
     position: absolute;
-    top: 670px;
+    top: 730px;
+    
 }
 
 .box1 {
@@ -424,7 +427,7 @@ span.newpoint {
     color:#9FEF00;
 }
 
-
+/* 
 .margin-box {
     margin-left: 120px;
     margin-top: 10px;
@@ -435,7 +438,7 @@ span.newpoint {
 }
 .margin1-box {
     margin-right: 120px;
-}
+} */
 
 
 .demo-box2 {
@@ -791,21 +794,25 @@ span.newpoint {
 
 .link-blog {
     display: flex;
-    color: #9FEF00;
+    color: #fff;
     font-size: 20px;
     text-decoration: none;
     text-align: center;
     justify-content: center;
 }
 
-.right-blog {
-    justify-content: center;
+.link-blog:hover {
+    color: #9FEF00;
+}
+
+
+/* .right-blog {
     margin-top: 18px;
     font-size: 12px;
     position: relative;
     top: 5px;
     right: 5px;
-}
+} */
 
 
 .text-blog {
@@ -864,27 +871,78 @@ span.newpoint {
 
 }
 
-@media (min-width: 992px) {
-  .col-lg-4 {
-    width:33.33333333%;
-    flex:0 0 33.33333%;
+.bold-service {
+    background-color: #0B121F;
+    width: 100%;
+
+}
+
+.bold-service-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.bold-service-link:hover {
+    color: #9FEF00;
+    text-decoration: none;
+
+}
+
+.business-box , .hacker-box , .Academia-box {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+        .font-size36-md {
+            font-size:36px;
+        }
+        .font-size18-md {
+            font-size:18px;
+        }
+    
+       
+    }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 40px;
+    }
   }
-}
 
-
-@media (min-width: 768px) {
-    .font-size36-md {
-        font-size:36px;
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      width:33.33333333%;
+      flex:0 0 33.33333%;
     }
-    .font-size18-md {
-        font-size:18px;
+  }
+  
+  @media screen and (min-width: 1100px) {
+    .container {
+      padding: 60px;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1500px) {
+    .container {
+      padding: 80px;
+    }
+    .h2-chevron {
+        margin-left: 141px;
     }
 
-   
-}
+  }
 
-@media (min-width: 768px) {
-    .logo-container img {
-      width: 200px; 
-    }
+
+  @media screen and (min-width: 2000px) {
+
+
   }
